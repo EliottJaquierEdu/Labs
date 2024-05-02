@@ -25,7 +25,7 @@ To check the version, open IntelliJ IDEA Ultimate, click on the settings button 
 
 It should give you something like :
 
-![IntelliJ IDEA version](img/ij-idea-version.png)
+![IntelliJ IDEA version](../img/ij-idea-version.png)
 
 ### Containers Engins - Docker
 Download Docker Desktop from https://desktop.docker.com/win/main/amd64/Docker%20Desktop%20Installer.exe (at least v23)
@@ -36,7 +36,7 @@ Start docker and check your version with
 docker version
 ```
 Should give something like
-![Docker version](img/docker-version.png)
+![Docker version](../img/docker-version.png)
 
 ### Versioning - Git + Git flow
 You can download Git for windows from https://github.com/git-for-windows/git/releases/download/v2.44.0.windows.1/Git-2.44.0-64-bit.exe (at least v2.44) 
@@ -62,7 +62,7 @@ git flow version
 
 ### IDE Plugin - Docker plugin for IntelliJ
 Open IntelliJ IDEA, go to plugins and type 'Docker'. Click on 'install'
-![Docker plugin installation](img/docker-plugin-version.png)
+![Docker plugin installation](../img/docker-plugin-version.png)
 You can now check the version on the right of the 'disable' button.
 
 ### Development Kit - JDK
@@ -73,7 +73,7 @@ Check your java version
 java --version
 ```
 It should give you something like
-![Java version](img/java-version.png)
+![Java version](../img/java-version.png)
 
 Note : Be carefull if you have multiple java versions. You may need to change the version to use : https://superuser.com/questions/1057532/how-to-change-java-version-on-windows-10
 
@@ -81,7 +81,7 @@ Note : Be carefull if you have multiple java versions. You may need to change th
 
 Next, go to Control Panel > System > Advanced System Settings > Environment Variables. Click on 'Path' and add something like 'C:\tools\apache-maven-3.9.6\bin'.
 
-![Env vars modification on Windows](img/env-vars.png)
+![Env vars modification on Windows](../img/env-vars.png)
 
 You can now check version with
 
@@ -90,7 +90,7 @@ mvn --version
 ```
 
 It should give you something like
-![Maven version on Windows](img/mvn-version.png)
+![Maven version on Windows](../img/mvn-version.png)
 
 ## Schema
 
@@ -99,7 +99,7 @@ Show your development environment, mentioning all the components in the stack.
 Identify the links between components.
 
 
-![Dev stack](img/dev-stack.png)
+![Dev stack](../img/dev-stack.png)
 
 ## Analysis
 
@@ -144,7 +144,7 @@ See [Overview of Docker Desktop](https://docs.docker.com/desktop/)
 * JDK, JRE, JVM... what's the difference?
 
 
-![JDK Arch](img/jdk-arch.png)
+![JDK Arch](../img/jdk-arch.png)
 
 ### Maven
 
