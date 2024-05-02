@@ -78,7 +78,11 @@ mvn spring-boot:run
 * How can we access a home page via our browser?
 
 ```
-//TODO
+When starting the java application, spring boot start a serverlet. 
+The implementation used on this app is an embeded Apache Tomcat web server.
+//TODO : Find where tomcat interact with the spring router.
+Next, a rooter determine the controller and method to go by going through @GetMapping anotation.
+The welcome controller simply return the 'welcome' view, a HTML template.
 ```
 
 * Go to http://localhost:8080/owners/find and add an owner
@@ -88,13 +92,17 @@ mvn spring-boot:run
 * Relaunch the application and try again. How is data persistence ensured?
 
 ```
-//TODO
+The data is destroyed. Is it beacause it's a database in RAM or file is destroyed or schema is re-run? I'm not sure.
 ```
 
 * How many logic layers are implemented on this application?
 
 ```
-//TODO
+4 :
+Presentation Layer
+Business Layer – Business Logic, Validation & Authorization
+Persistence Layer – Storage Logic
+Database Layer – Actual Database
 ```
 
 ---
@@ -103,11 +111,18 @@ mvn spring-boot:run
 * At this stage of the analysis, can you imagine a little better what kind of needs Docker could help us with?
 
 ```
-//TODO
+We could have a docker for building the app (full JDK suite / all tools) and then publish a production, minimal docker with only the jar / war and a JRE.
+We can split the project to use microservices by business (owner, vet, etc...) or layer (one container for database, one for business logic and one for web application)
 ```
 
 * Try to list the tasks to be carried out to obtain two thirds, one hosting the application part locally and the second third using Docker for the database engine.
 
 ```
-//TODO
+- Ask questions (like will the database know business entities / have spring ? or simply a docker with a database only and the main application will query the remote docker with SQL?)
+- Research docker / find a clean database type image
+- Split application 
+- (Create a clean container builder) not usefull for now. No need for Ci/CD pipeline either.
+- Configure app to use a remote database
+- Find a place to publish the database image
+- (Deploy the container to AWS, research, awscli, configure, etc...)
 ```
