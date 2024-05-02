@@ -12,25 +12,25 @@ In this lab, we'll be taking the application we're going to evolve into our own 
 * [Maven Doc](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html#build-the-project)
 
 ```bash
-//TODO
+mvn package
 ```
 
 * What operation does maven perform ?
 
 ```
-//TODO
+//Fetch dependencies, copy-resources, compile, tests, report, build jar, repackage
 ```
 
 * What java dependencies are needed to make this work?
 
 ```
-//TODO
+//In summary : Spring Boot, Javax cache, Webjars, H2Database, XML Bind, Junit, MySQL (Connector), Postgress, Caffeine 
 ```
 
 * Where do we find the pre-compiled application after that?
 
 ```
-//TODO
+//Under target (target\spring-petclinic-3.2.0-SNAPSHOT.jar)
 ```
 
 * Delete the folder containing the pre-compiled application, try again to observe the process.
@@ -38,7 +38,7 @@ In this lab, we'll be taking the application we're going to evolve into our own 
 * Is it a build ready for prod ?
 
 ```
-//TODO
+//No, it is a snapshot. It's not meant to go in a production env.
 ```
 
 ### Use Java to launch the application
@@ -46,13 +46,13 @@ In this lab, we'll be taking the application we're going to evolve into our own 
 * [The java command](https://docs.oracle.com/en/java/javase/14/docs/specs/man/java.html)
 
 ```bash
-//TODO
+java -jar .\target\spring-petclinic-3.2.0-SNAPSHOT.jar
 ```
 
 * Try to access to the app via your browser
 
 ```
-//TODO
+//localhost:8080
 ```
 
 * You should get this page
@@ -66,7 +66,7 @@ In this lab, we'll be taking the application we're going to evolve into our own 
 * [Maven plug in to run the app](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#run)
 
 ```bash
-//TODO
+mvn spring-boot:run
 ```
 
 ---
