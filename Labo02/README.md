@@ -115,7 +115,7 @@ We could have a docker for building the app (full JDK suite / all tools) and the
 We can split the project to use microservices by business (owner, vet, etc...) or layer (one container for database, one for business logic and one for web application)
 ```
 
-* Try to list the tasks to be carried out to obtain two thirds, one hosting the application part locally and the second third using Docker for the database engine.
+* Try to list the tasks to be carried out to obtain two tiers, one hosting the application part locally and the second tier using Docker for the database engine.
 
 ```
 - Ask questions (like will the database know business entities / have spring ? or simply a docker with a database only and the main application will query the remote docker with SQL?)
