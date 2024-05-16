@@ -12,7 +12,7 @@ In this lab, we'll be taking the application we're going to evolve into our own 
 * [Maven Doc](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html#build-the-project)
 
 ```bash
-mvn package
+mvnw package
 ```
 
 * What operation does maven perform ?
@@ -25,6 +25,7 @@ mvn package
 
 ```
 //In summary : Spring Boot, Javax cache, Webjars, H2Database, XML Bind, Junit, MySQL (Connector), Postgress, Caffeine 
+//Java JDK 17
 ```
 
 * Where do we find the pre-compiled application after that?
@@ -66,7 +67,7 @@ java -jar .\target\spring-petclinic-3.2.0-SNAPSHOT.jar
 * [Maven plug in to run the app](https://docs.spring.io/spring-boot/docs/current/maven-plugin/reference/htmlsingle/#run)
 
 ```bash
-mvn spring-boot:run
+mvnw spring-boot:run
 ```
 
 ---
